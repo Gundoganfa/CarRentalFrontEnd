@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Rental Id</th>
+            <th scope="col">Brand Name</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">rent Date</th>
+            <th scope="col">return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let rentaldto of rentaldetails">
+            <th>{{rentaldto.rentalId}}</th>
+            <th>brandName</th>
+            <th>{{rentaldto.customerName}}</th>
+            <th>{{rentaldto.customerSurname}}</th>  
+            <th>{{rentaldto.rentDate}}</th>
+            <th>{{rentaldto.returnDate}}</th>  
+        </tr>
+    </tbody>
+</table>
+
